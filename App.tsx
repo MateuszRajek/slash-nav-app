@@ -1,12 +1,12 @@
 import React from 'react';
 
-import {SafeAreaView, ScrollView, StatusBar} from 'react-native';
+import { SafeAreaView } from 'react-native';
+import Navigation from './src/screens/Navigation';
 
 function App(): React.JSX.Element {
   return (
     <SafeAreaView>
-      <StatusBar />
-      <ScrollView contentInsetAdjustmentBehavior="automatic"></ScrollView>
+      <Navigation />
     </SafeAreaView>
   );
 }
