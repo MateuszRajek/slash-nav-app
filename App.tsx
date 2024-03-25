@@ -1,14 +1,11 @@
 import React from 'react';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import { default as NavigationComponent } from './src/navigation/index';
 
-import {SafeAreaView, ScrollView, StatusBar} from 'react-native';
+const Stack = createNativeStackNavigator();
 
 function App(): React.JSX.Element {
-  return (
-    <SafeAreaView>
-      <StatusBar />
-      <ScrollView contentInsetAdjustmentBehavior="automatic"></ScrollView>
-    </SafeAreaView>
-  );
+  return <NavigationComponent />;
 }
 
 export default App;
